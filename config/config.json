@@ -1,0 +1,17 @@
+{
+    "general": {
+        "defaultLanguage": "en_US",
+        "defaultModule": "home"
+    },
+    "installedModules": {
+        "home": {
+            "name": "Home"
+        },
+        "category": {
+            "name": "Category"
+        },
+        "topic": {
+            "name": "Topic"
+        }
+    }
+}

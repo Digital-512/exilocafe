@@ -1,0 +1,29 @@
+{
+  "name": "exilocafe",
+  "version": "1.0.0",
+  "description": "Fast and lightweight forum engine for Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digital-512/exilocafe.git"
+  },
+  "keywords": [
+    "forum"
+  ],
+  "author": "Digital-512",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Digital-512/exilocafe/issues"
+  },
+  "homepage": "https://github.com/Digital-512/exilocafe#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2"
+  }
+}
