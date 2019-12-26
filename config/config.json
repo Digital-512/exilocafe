@@ -1,17 +1,18 @@
 {
     "general": {
+        "port": 4567,
         "defaultLanguage": "en_US",
         "defaultModule": "home"
     },
     "installedModules": {
         "home": {
-            "name": "Home"
+            "permission": "exilocafe.default"
         },
         "category": {
-            "name": "Category"
+            "permission": "exilocafe.module.category"
         },
         "topic": {
-            "name": "Topic"
+            "permission": "exilocafe.module.topic"
         }
     }
 }

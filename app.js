@@ -8,7 +8,7 @@ const index = require('./routes/index');
 const config = require('./config/config.json');
 const lang = require('./config/language/' + config.general.defaultLanguage + '.json');
 const app = express();
-const port = 4567;
+const port = config.general.port;
 
 // View engine setup
 app.set('views', path.join(__dirname, 'views'));

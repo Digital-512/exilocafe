@@ -1,0 +1,57 @@
+{
+    "langName": "English (US)",
+    "indexPage": {
+        "msg": {
+            "searchForum": "Search forum"
+        },
+        "modules": {
+            "home": {
+                "name": "Home"
+            },
+            "category": {
+                "name": "Category"
+            },
+            "topic": {
+                "name": "Topic"
+            }
+        }
+    },
+    "errorPage": {
+        "errorTitle": "Error",
+        "checkReasons": "This may be due to the following reasons:",
+        "contactAdmin": "If you believe you are getting this error message by mistake, please contact the website administrator.",
+        "internalError": "Internal System Error",
+        "type_404": {
+            "name": "Not Found",
+            "message": "The requested file or directory was not found!"
+        },
+        "type_500": {
+            "name": "Internal Server Error",
+            "message": "The server encountered an internal error or misconfiguration and was unable to complete your request."
+        },
+        "type_502": {
+            "name": "Bad Gateway",
+            "message": "The server is experiencing an error while processing your request."
+        },
+        "type_401": {
+            "name": "Unauthorized",
+            "message": "Looks like you do not have permission to view this page. Please log in to your account and try again."
+        },
+        "type_403": {
+            "name": "Access Denied",
+            "message": "Looks like you do not have permission to view this page."
+        },
+        "type_400": {
+            "name": "Bad Request",
+            "message": "The server was unable to process your request due to invalid state or syntax."
+        },
+        "type_520": {
+            "name": "Unknown Error",
+            "message": "Something went wrong. Try again later."
+        },
+        "type_503": {
+            "name": "Service Unavailable",
+            "message": "The server is temporarily unable to process your request due to maintenance or capacity problems. Try again later."
+        }
+    }
+}
