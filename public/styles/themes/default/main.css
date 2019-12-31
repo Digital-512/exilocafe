@@ -254,3 +254,105 @@ https://github.com/google/material-design-lite/issues/4180
         width: 100%;
     }
 }
+/* Common classes */
+.home-header-img {
+    width: 100%;
+    height: 231px;
+    background-image: url('/styles/themes/default/images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    padding: 80px;
+}
+.home-header-img > .title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+.module-content > .forum-sidebar {
+    padding-left: 40px;
+    margin-top: 101px;
+}
+.forum-sidebar > .sidebar-card {
+    width: 300px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.forum-sidebar > .sidebar-card:last-child {
+    margin-bottom: 0;
+}
+.forum-sidebar > .sidebar-card > .header {
+    padding: 20px 35px;
+    border-bottom: 1px solid #e8eef1;
+    font-weight: bold;
+    color: #00064b;
+}
+.forum-sidebar > .sidebar-card > .content {
+    color: #857f99;
+}
+.forum-sidebar > .sidebar-card > .content > .sidebar-row {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e8eef1;
+}
+.forum-sidebar > .sidebar-card > .content > .sidebar-row:last-child {
+    border-bottom: none;
+}
+.forum-sidebar > .sidebar-card > .content > .post-row {
+    flex-direction: column;
+    cursor: pointer;
+    padding: 30px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.forum-sidebar > .sidebar-card > .content > .post-row:hover {
+    background-color: #f5f6f7;
+}
+.forum-sidebar > .sidebar-card > .content > .post-row > .post-title {
+    color: #00064b;
+}
+.forum-sidebar > .sidebar-card > .content > .post-row > .author-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+.forum-sidebar > .sidebar-card > .content > .post-row > .author-box > .img {
+    min-width: 18px;
+    min-height: 18px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+.forum-sidebar > .sidebar-card > .content > .sidebar-row > .block {
+    border-right: 1px solid #e8eef1;
+    display: -webkit-flex;
+    display: flex;
+    padding: 30px 0;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.forum-sidebar > .sidebar-card > .content > .sidebar-row > .block:last-child {
+    border-right: none;
+}
+.forum-sidebar > .sidebar-card > .content > .sidebar-row > .block > .big-text {
+    font-size: 25px;
+    line-height: 25px;
+    color: #00064b;
+}
+.forum-sidebar > .sidebar-card > .content > .sidebar-row > .block > .member-link {
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #006cfb;
+}
+.forum-sidebar > .sidebar-card > .content > .sidebar-row > .block > .member-link:hover {
+    text-decoration: underline;
+}
