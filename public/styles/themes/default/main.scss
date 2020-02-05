@@ -3,6 +3,7 @@
 @use 'footer';
 @use 'sidebar';
 @use 'common';
+@use 'responsiveness';
 
 body {
     background-color: colors.$bodyBackground;
@@ -15,53 +16,4 @@ https://github.com/google/material-design-lite/issues/4180
     overflow-y: initial;
     overflow-x: initial;
     overflow: visible;
-}
-@media only screen and (max-width: 600px) {
-    .desktop-only {
-        display: none;
-    }
-    .mobile-only {
-        display: inherit;
-    }
-    footer > .col-1 > .button-row {
-        flex-direction: column;
-    }
-    footer > .col-1 > .button-row > .button {
-        margin: 0 0 15px 0;
-    }
-    footer > .col-2 {
-        flex-direction: column;
-    }
-    footer > .col-2 > .sm-col {
-        margin: 0;
-    }
-    footer > .col-2 > .sm-col > span {
-        padding: 5px;
-        border-radius: 4px;
-        border: 2px solid colors.$buttonSecondaryBorder;
-        background-color: colors.$buttonSecondary;
-        white-space: initial;
-        margin: 0 0 15px 0;
-        cursor: pointer;
-        text-align: center;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-    }
-    footer > .col-2 > .sm-col > span:hover {
-        background-color: colors.$buttonSecondaryHover;
-        color: inherit;
-    }
-}
-@media only screen and (max-width: 1024px) {
-    .page-nav {
-        display: none;
-    }
-    footer {
-        flex-direction: column;
-    }
-    footer > .col-2 {
-        padding: 0;
-        margin-top: 50px;
-        width: 100%;
-    }
 }
