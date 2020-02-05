@@ -1,202 +1,11 @@
+@use 'colors' as colors;
+@use 'header';
+@use 'footer';
+@use 'sidebar';
 @use 'common';
 
 body {
-    background-color: #f9f9fc;
-}
-.mdl-layout__header {
-    background-color: #fff;
-    color: #000;
-}
-.mdl-layout__drawer-button i {
-    color: #00064b;
-}
-.mdl-layout__header-row .mdl-navigation__link {
-    color: #00064b;
-    background-color: inherit;
-    cursor: pointer;
-    outline: none;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.mdl-layout__header-row .mdl-navigation__link:hover {
-    background-color: #f5f6f7;
-}
-.mdl-layout__header-row .mdl-navigation__link:hover .mdl-badge[data-badge]:after {
-    border-color: #f5f6f7;
-}
-.mdl-badge[data-badge]:after {
-    background: #39b54a;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #fff;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-}
-.mdl-navigation {
-    display: contents;
-}
-.mdl-navigation > .account-btn {
-    display: -webkit-flex;
-    display: flex;
-    height: 100%;
-    align-items: center;
-}
-.account-btn > .avatar-img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-}
-.search-forum-block {
-    width: 500px;
-    margin: 0 30px;
-    position: relative;
-}
-.search-forum-block > i {
-    font-size: 22px;
-    color: #a8b7cd;
-    position: absolute;
-    top: 6px;
-    left: 20px;
-}
-.search-forum-block > input {
-    background-color: #f5f6f7;
-    border: none;
-    outline: none;
-    padding: 9px 25px 9px 50px;
-    border-radius: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-}
-.search-forum-block > input:focus {
-    background-color: #ebeced;
-}
-.search-forum-block > input::placeholder {
-    color: #9c9eae;
-    opacity: 1;
-}
-.search-forum-block > input::-ms-input-placeholder {
-    color: #9c9eae;
-    opacity: 1;
-}
-.search-forum-block > input:-ms-input-placeholder {
-    color: #9c9eae;
-    opacity: 1;
-}
-.mobile-only {
-    display: none;
-    padding: 0 16px;
-}
-.desktop-only {
-    display: inherit;
-}
-.mobile-only .mdl-navigation__link {
-    flex-grow: 1;
-    text-align: center;
-}
-.page-nav {
-    margin-left: 40px !important;
-    display: -webkit-flex;
-    display: flex;
-}
-.page-nav .mdl-navigation__link {
-    color: #555;
-}
-.mdl-layout__drawer {
-    background: #fff;
-    border: none;
-}
-.mdl-layout__drawer .mdl-navigation__link {
-    color: #212121 !important;
-    display: -webkit-flex !important;
-    display: flex !important;
-    align-items: center;
-    cursor: pointer;
-}
-.mdl-layout__drawer .mdl-navigation__link > i {
-    margin-right: 20px;
-    font-size: 21px;
-    color: #757575;
-}
-.main-footer {
-    background-color: #fff;
-    color: #00064b;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    padding: 100px 50px;
-}
-.main-footer > .col-2 {
-    display: -webkit-flex;
-    display: flex;
-    padding: 0 100px;
-}
-.main-footer > .col-1 > .title {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-.main-footer > .col-1 > .description {
-    color: #857f99;
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-.main-footer > .col-1 > .button-row {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-}
-.main-footer > .col-1 > .button-row > .button:last-child {
-    margin: 0;
-}
-.main-footer > .col-1 > .button-row > .button {
-    padding: 14px 50px;
-    border-radius: 4px;
-    border: 2px solid #e8eef1;
-    background-color: #fff;
-    margin: 0 15px 0 0;
-    cursor: pointer;
-    text-align: center;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-}
-.main-footer > .col-1 > .button-row > .button:hover {
-    background-color: #f5f6f7;
-}
-.main-footer > .col-1 > .button-row > .footer-active-box {
-    background-color: #39b54a;
-    border: 2px solid #39b54a;
-    color: #fff;
-}
-.main-footer > .col-1 > .button-row > .footer-active-box:hover {
-    background-color: #32a041;
-    border: 2px solid #32a041;
-}
-.main-footer > .col-2 > .sm-col {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    margin-right: 50px;
-}
-.main-footer > .col-2 > .sm-col:last-child {
-    margin: 0;
-}
-.main-footer > .col-2 > .sm-col > span {
-    line-height: 35px;
-    cursor: pointer;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    white-space: nowrap;
-}
-.main-footer > .col-2 > .sm-col > span:hover {
-    color: #857f99;
+    background-color: colors.$bodyBackground;
 }
 /*
 Workaround for a bug #4180
@@ -214,23 +23,23 @@ https://github.com/google/material-design-lite/issues/4180
     .mobile-only {
         display: inherit;
     }
-    .main-footer > .col-1 > .button-row {
+    footer > .col-1 > .button-row {
         flex-direction: column;
     }
-    .main-footer > .col-1 > .button-row > .button {
+    footer > .col-1 > .button-row > .button {
         margin: 0 0 15px 0;
     }
-    .main-footer > .col-2 {
+    footer > .col-2 {
         flex-direction: column;
     }
-    .main-footer > .col-2 > .sm-col {
+    footer > .col-2 > .sm-col {
         margin: 0;
     }
-    .main-footer > .col-2 > .sm-col > span {
+    footer > .col-2 > .sm-col > span {
         padding: 5px;
         border-radius: 4px;
-        border: 2px solid #e8eef1;
-        background-color: #fff;
+        border: 2px solid colors.$buttonSecondaryBorder;
+        background-color: colors.$buttonSecondary;
         white-space: initial;
         margin: 0 0 15px 0;
         cursor: pointer;
@@ -238,8 +47,8 @@ https://github.com/google/material-design-lite/issues/4180
         -webkit-transition: 0.3s;
         transition: 0.3s;
     }
-    .main-footer > .col-2 > .sm-col > span:hover {
-        background-color: #f5f6f7;
+    footer > .col-2 > .sm-col > span:hover {
+        background-color: colors.$buttonSecondaryHover;
         color: inherit;
     }
 }
@@ -247,10 +56,10 @@ https://github.com/google/material-design-lite/issues/4180
     .page-nav {
         display: none;
     }
-    .main-footer {
+    footer {
         flex-direction: column;
     }
-    .main-footer > .col-2 {
+    footer > .col-2 {
         padding: 0;
         margin-top: 50px;
         width: 100%;
