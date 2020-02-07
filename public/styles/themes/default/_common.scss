@@ -14,3 +14,15 @@
     font-size: 30px;
     font-weight: bold;
 }
+.round-img {
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.round-icon {
+    border-radius: 50%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

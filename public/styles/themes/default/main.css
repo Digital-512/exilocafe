@@ -51,14 +51,11 @@
 .account-btn > .avatar-img {
   width: 35px;
   height: 35px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
 }
 
 .search-forum-block {
   width: 500px;
-  margin: 0 30px;
+  margin: auto 30px;
   position: relative;
 }
 
@@ -296,9 +293,6 @@ footer > .col-2 > .sm-col > span:hover {
 .forum-sidebar > .sidebar-card > .content > .post-row > .author-box > .img {
   min-width: 18px;
   min-height: 18px;
-  border-radius: 50%;
-  background-position: center;
-  background-size: cover;
   margin-right: 10px;
 }
 
@@ -349,6 +343,20 @@ footer > .col-2 > .sm-col > span:hover {
   color: #fff;
   font-size: 30px;
   font-weight: bold;
+}
+
+.round-img {
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.round-icon {
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 1600px) {

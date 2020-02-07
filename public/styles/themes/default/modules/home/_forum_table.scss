@@ -36,19 +36,13 @@
     background-color: colors.$categoryIconDefaultBackground;
     color: colors.$categoryIconDefaultText;
     font-size: 21px;
-    border-radius: 50%;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-width: 55px;
     min-height: 55px;
+    height: 55px;
 }
 .forum-table .last-post-icon {
     min-width: 45px;
     min-height: 45px;
-    background-position: center;
-    background-size: cover;
 }
 .forum-table .category-text {
     margin-left: 20px;

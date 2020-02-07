@@ -54,20 +54,14 @@
   background-color: #eaeaea;
   color: #bdc4ce;
   font-size: 21px;
-  border-radius: 50%;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-width: 55px;
   min-height: 55px;
+  height: 55px;
 }
 
 .forum-table .last-post-icon {
   min-width: 45px;
   min-height: 45px;
-  background-position: center;
-  background-size: cover;
 }
 
 .forum-table .category-text {
@@ -126,9 +120,6 @@
   min-width: 45px;
   min-height: 45px;
   margin-right: 15px;
-  background-position: center;
-  background-size: cover;
-  border-radius: 50%;
   cursor: pointer;
   outline: none;
 }
@@ -136,10 +127,7 @@
 .users-box > .content > .btn:last-child {
   background-color: #eaeaea;
   color: #a8a9b5;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 45px;
   margin-right: 0;
   -moz-user-select: none;
   -webkit-user-select: none;
