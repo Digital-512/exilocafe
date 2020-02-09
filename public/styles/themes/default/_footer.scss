@@ -3,13 +3,11 @@
 footer {
     background-color: colors.$footerBackground;
     color: colors.$primaryText;
-    display: -webkit-flex;
     display: flex;
     align-items: center;
     padding: 100px 50px;
 }
 footer > .col-2 {
-    display: -webkit-flex;
     display: flex;
     padding: 0 100px;
 }
@@ -24,7 +22,6 @@ footer > .col-1 > .description {
     margin-bottom: 15px;
 }
 footer > .col-1 > .button-row {
-    display: -webkit-flex;
     display: flex;
     flex-direction: row;
 }
@@ -39,7 +36,6 @@ footer > .col-1 > .button-row > .button {
     margin: 0 15px 0 0;
     cursor: pointer;
     text-align: center;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 footer > .col-1 > .button-row > .button:hover {
@@ -55,7 +51,6 @@ footer > .col-1 > .button-row > .footer-active-box:hover {
     border: 2px solid colors.$buttonPrimaryHoverBorder;
 }
 footer > .col-2 > .sm-col {
-    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     margin-right: 50px;
@@ -66,7 +61,6 @@ footer > .col-2 > .sm-col:last-child {
 footer > .col-2 > .sm-col > span {
     line-height: 35px;
     cursor: pointer;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     white-space: nowrap;
 }

@@ -22,7 +22,6 @@
 }
 .users-box > .content {
     padding: 20px 35px;
-    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -39,9 +38,6 @@
     color: colors.$onlineUsersMoreIcon;
     height: 45px;
     margin-right: 0;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
 .users-box > .content > .btn:last-child > i {

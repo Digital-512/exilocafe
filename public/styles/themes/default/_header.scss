@@ -12,11 +12,7 @@
     background-color: inherit;
     cursor: pointer;
     outline: none;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
 .mdl-layout__header-row .mdl-navigation__link:hover {
@@ -30,14 +26,12 @@
     width: 20px;
     height: 20px;
     border: 2px solid colors.$primaryBadgeBorder;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 .mdl-navigation {
     display: contents;
 }
 .mdl-navigation > .account-btn {
-    display: -webkit-flex;
     display: flex;
     height: 100%;
     align-items: center;
@@ -66,21 +60,12 @@
     border-radius: 20px;
     width: 100%;
     box-sizing: border-box;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 .search-forum-block > input:focus {
     background-color: colors.$headerSearchInputFocus;
 }
 .search-forum-block > input::placeholder {
-    color: colors.$headerSearchInputPlaceholder;
-    opacity: 1;
-}
-.search-forum-block > input::-ms-input-placeholder {
-    color: colors.$headerSearchInputPlaceholder;
-    opacity: 1;
-}
-.search-forum-block > input:-ms-input-placeholder {
     color: colors.$headerSearchInputPlaceholder;
     opacity: 1;
 }
@@ -97,7 +82,6 @@
 }
 .page-nav {
     margin-left: 40px !important;
-    display: -webkit-flex;
     display: flex;
 }
 .page-nav .mdl-navigation__link {
@@ -109,7 +93,6 @@
 }
 .mdl-layout__drawer .mdl-navigation__link {
     color: colors.$drawerNavigationLinkText !important;
-    display: -webkit-flex !important;
     display: flex !important;
     align-items: center;
     cursor: pointer;

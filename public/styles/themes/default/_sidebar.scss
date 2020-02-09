@@ -23,7 +23,6 @@
     color: colors.$forumContentSecondaryText;
 }
 .forum-sidebar > .sidebar-card > .content > .sidebar-row {
-    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid colors.$forumContentBorder;
@@ -35,7 +34,6 @@
     flex-direction: column;
     cursor: pointer;
     padding: 30px;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 .forum-sidebar > .sidebar-card > .content > .post-row:hover {
@@ -45,7 +43,6 @@
     color: colors.$forumContentPrimaryText;
 }
 .forum-sidebar > .sidebar-card > .content > .post-row > .author-box {
-    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,7 +55,6 @@
 }
 .forum-sidebar > .sidebar-card > .content > .sidebar-row > .block {
     border-right: 1px solid colors.$forumContentBorder;
-    display: -webkit-flex;
     display: flex;
     padding: 30px 0;
     width: 100%;
