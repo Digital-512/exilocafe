@@ -78,9 +78,9 @@
         cursor: pointer;
         text-align: center;
         transition: 0.3s;
-    }
-    footer > .col-2 > .sm-col > span:hover {
-        background-color: colors.$buttonSecondaryHover;
-        color: inherit;
+        &:hover {
+            background-color: colors.$buttonSecondaryHover;
+            color: inherit;
+        }
     }
 }

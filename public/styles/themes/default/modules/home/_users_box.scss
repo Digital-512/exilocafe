@@ -6,9 +6,9 @@
     margin-bottom: 40px;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     background-color: global_colors.$forumContentBackground;
-}
-.users-box:last-child {
-    margin-bottom: 0;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 .users-box > .header {
     padding: 20px 35px;
@@ -32,14 +32,14 @@
     margin-right: 15px;
     cursor: pointer;
     outline: none;
-}
-.users-box > .content > .btn:last-child {
-    background-color: colors.$categoryIconDefaultBackground;
-    color: colors.$onlineUsersMoreIcon;
-    height: 45px;
-    margin-right: 0;
-    user-select: none;
-}
-.users-box > .content > .btn:last-child > i {
-    font-size: 27px;
+    &:last-child {
+        background-color: colors.$categoryIconDefaultBackground;
+        color: colors.$onlineUsersMoreIcon;
+        height: 45px;
+        margin-right: 0;
+        user-select: none;
+        > i {
+            font-size: 27px;
+        }
+    }
 }

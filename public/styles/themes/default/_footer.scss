@@ -25,9 +25,6 @@ footer > .col-1 > .button-row {
     display: flex;
     flex-direction: row;
 }
-footer > .col-1 > .button-row > .button:last-child {
-    margin: 0;
-}
 footer > .col-1 > .button-row > .button {
     padding: 14px 50px;
     border-radius: 4px;
@@ -37,33 +34,36 @@ footer > .col-1 > .button-row > .button {
     cursor: pointer;
     text-align: center;
     transition: 0.3s;
-}
-footer > .col-1 > .button-row > .button:hover {
-    background-color: colors.$buttonSecondaryHover;
+    &:hover {
+        background-color: colors.$buttonSecondaryHover;
+    }
+    &:last-child {
+        margin: 0;
+    }
 }
 footer > .col-1 > .button-row > .footer-active-box {
     background-color: colors.$buttonPrimary;
     border: 2px solid colors.$buttonPrimaryBorder;
     color: colors.$buttonPrimaryText;
-}
-footer > .col-1 > .button-row > .footer-active-box:hover {
-    background-color: colors.$buttonPrimaryHover;
-    border: 2px solid colors.$buttonPrimaryHoverBorder;
+    &:hover {
+        background-color: colors.$buttonPrimaryHover;
+        border: 2px solid colors.$buttonPrimaryHoverBorder;
+    }
 }
 footer > .col-2 > .sm-col {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
-}
-footer > .col-2 > .sm-col:last-child {
-    margin: 0;
+    &:last-child {
+        margin: 0;
+    }
 }
 footer > .col-2 > .sm-col > span {
     line-height: 35px;
     cursor: pointer;
     transition: 0.3s;
     white-space: nowrap;
-}
-footer > .col-2 > .sm-col > span:hover {
-    color: colors.$secondaryText;
+    &:hover {
+        color: colors.$secondaryText;
+    }
 }

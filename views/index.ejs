@@ -62,21 +62,128 @@
                 <nav class="mdl-navigation">
                     <div class="desktop-only">
                         <div class="search-forum-block"><i class="material-icons">search</i><input type="text" name="search" id="search-forum-input" placeholder="<%= lang.indexPage.msg.searchForum %>"></div>
-                        <span class="mdl-navigation__link"><i class="material-icons">question_answer</i></span>
-                        <span class="mdl-navigation__link"><i class="material-icons mdl-badge mdl-badge--overlap" data-badge="2">notifications</i></span>
+                        <div class="has-dropdown">
+                            <span class="mdl-navigation__link"><i class="material-icons">question_answer</i></span>
+                            <div class="dropdown-content">
+                                <div class="notifications-drop-box">
+                                    <div class="notification">
+                                        <div class="round-img avatar-img" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                                        <div class="message">
+                                            <div class="from">Kryptoners (2)</div>
+                                            <div class="chat">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet...</div>
+                                        </div>
+                                    </div>
+                                    <div class="notification">
+                                        <div class="round-img avatar-img" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                                        <div class="message">
+                                            <div class="from">testuser</div>
+                                            <div class="chat">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <span><i class="fa fa-check" aria-hidden="true"></i>Mark all chats read</span>
+                                <span><i class="fa fa-envelope-open" aria-hidden="true"></i>See all chats</span>
+                            </div>
+                        </div>
+                        <div class="has-dropdown">
+                            <span class="mdl-navigation__link"><i class="material-icons mdl-badge mdl-badge--overlap" data-badge="2">notifications</i></span>
+                            <div class="dropdown-content">
+                                <div class="notifications-drop-box">
+                                    <div class="notification">
+                                        <div class="round-img avatar-img" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                                        <div class="message">
+                                            <div class="date">2 minutes ago</div>
+                                            <div><b>Kryptoners</b> have upvoted your post in <b>Welcome to the Exilocafe!</b>.</div>
+                                        </div>
+                                    </div>
+                                    <div class="notification">
+                                        <div class="round-img avatar-img" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                                        <div class="message">
+                                            <div class="date">12 minutes ago</div>
+                                            <div><b>testuser</b> have upvoted your post in <b>New post is here!</b>.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <span><i class="fa fa-check" aria-hidden="true"></i>Mark all notifications read</span>
+                                <span><i class="fa fa-envelope-open" aria-hidden="true"></i>See all notifications</span>
+                            </div>
+                        </div>
                         <span class="mdl-navigation__link" id="account-settings-btn"><i class="material-icons">settings</i></span>
                     </div>
-                    <span class="mdl-navigation__link account-btn">
-                        <div class="round-img avatar-img" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
-                    </span>
+                    <div class="has-dropdown nav-size">
+                        <span class="mdl-navigation__link account-btn">
+                            <div class="round-img avatar-img" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                        </span>
+                        <div class="dropdown-content">
+                            <span><i class="fa fa-circle user-status online" aria-hidden="true"></i>digital512</span>
+                            <div class="divider"></div>
+                            <span><i class="fa fa-circle user-status online" aria-hidden="true"></i>Online</span>
+                            <span><i class="fa fa-circle user-status away" aria-hidden="true"></i>Away</span>
+                            <span><i class="fa fa-circle user-status no-disturb" aria-hidden="true"></i>Do not disturb</span>
+                            <span><i class="fa fa-circle user-status offline" aria-hidden="true"></i>Invisible</span>
+                            <div class="divider"></div>
+                            <span><i class="fa fa-tasks" aria-hidden="true"></i>Admin panel</span>
+                            <span><i class="fa fa-cog" aria-hidden="true"></i>Settings</span>
+                            <div class="divider"></div>
+                            <span><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</span>
+                        </div>
+                    </div>
                 </nav>
             </div>
             <div class="mobile-only mdl-layout__header-row">
                 <!-- Navigation for mobile devices -->
                 <nav class="mdl-navigation">
                     <span class="mdl-navigation__link" id="mobile-search-btn"><i class="material-icons">search</i></span>
-                    <span class="mdl-navigation__link"><i class="material-icons">question_answer</i></span>
-                    <span class="mdl-navigation__link"><i class="material-icons mdl-badge mdl-badge--overlap" data-badge="2">notifications</i></span>
+                    <div class="has-dropdown">
+                        <span class="mdl-navigation__link"><i class="material-icons">question_answer</i></span>
+                        <div class="dropdown-content">
+                            <div class="notifications-drop-box">
+                                <div class="notification">
+                                    <div class="round-img avatar-img" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                                    <div class="message">
+                                        <div class="from">Kryptoners (2)</div>
+                                        <div class="chat">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet...</div>
+                                    </div>
+                                </div>
+                                <div class="notification">
+                                    <div class="round-img avatar-img" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                                    <div class="message">
+                                        <div class="from">testuser</div>
+                                        <div class="chat">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <span><i class="fa fa-check" aria-hidden="true"></i>Mark all chats read</span>
+                            <span><i class="fa fa-envelope-open" aria-hidden="true"></i>See all chats</span>
+                        </div>
+                    </div>
+                    <div class="has-dropdown">
+                        <span class="mdl-navigation__link"><i class="material-icons mdl-badge mdl-badge--overlap" data-badge="2">notifications</i></span>
+                        <div class="dropdown-content">
+                            <div class="notifications-drop-box">
+                                <div class="notification">
+                                    <div class="round-img avatar-img" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                                    <div class="message">
+                                        <div class="date">2 minutes ago</div>
+                                        <div><b>Kryptoners</b> have upvoted your post in <b>Welcome to the Exilocafe!</b>.</div>
+                                    </div>
+                                </div>
+                                <div class="notification">
+                                    <div class="round-img avatar-img" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                                    <div class="message">
+                                        <div class="date">12 minutes ago</div>
+                                        <div><b>testuser</b> have upvoted your post in <b>New post is here!</b>.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <span><i class="fa fa-check" aria-hidden="true"></i>Mark all notifications read</span>
+                            <span><i class="fa fa-envelope-open" aria-hidden="true"></i>See all notifications</span>
+                        </div>
+                    </div>
                     <span class="mdl-navigation__link" id="account-settings-btn"><i class="material-icons">settings</i></span>
                 </nav>
             </div>

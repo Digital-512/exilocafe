@@ -3,7 +3,7 @@
 .home-header-img {
     width: 100%;
     height: 231px;
-    background-image: url('/styles/themes/default/images/header-bg.jpg');
+    background-image: url("/styles/themes/default/images/header-bg.jpg");
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
@@ -24,4 +24,109 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.has-dropdown {
+    position: relative;
+    flex-grow: 1;
+}
+.mobile-only .has-dropdown {
+    position: initial;
+}
+.has-dropdown.nav-size {
+    height: 100%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: colors.$buttonSecondary;
+    min-width: 200px;
+    overflow: auto;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    right: 0;
+    z-index: 1;
+}
+.mobile-only > nav .dropdown-content {
+    left: 0;
+    min-width: initial;
+}
+.dropdown-content span {
+    color: colors.$buttonSecondaryText;
+    padding: 14px 16px;
+    display: block;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    transition: 0.3s;
+    &:hover {
+        background-color: colors.$buttonSecondaryHover;
+    }
+    &:active {
+        background-color: colors.$buttonSecondaryActive;
+    }
+}
+.dropdown-content span > i {
+    margin-right: 10px;
+}
+.dropdown-content .divider {
+    height: 1px;
+    overflow: hidden;
+    background-color: colors.$buttonSecondaryBorder;
+}
+.user-status.online {
+    color: colors.$userStatusOnline;
+}
+.user-status.away {
+    color: colors.$userStatusAway;
+}
+.user-status.no-disturb {
+    color: colors.$userStatusNoDisturb;
+}
+.user-status.offline {
+    color: colors.$userStatusOffline;
+}
+.notifications-drop-box {
+    width: 400px;
+    max-height: 450px;
+    overflow: auto;
+}
+.mobile-only > nav .notifications-drop-box {
+    width: initial;
+}
+.notifications-drop-box > .notification {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 1px solid colors.$forumContentBorder;
+    &:hover {
+        background-color: colors.$forumContentArticleHover;
+    }
+    &:active {
+        background-color: colors.$forumContentArticleActive;
+    }
+    &:last-child {
+        border-bottom: none;
+    }
+}
+.notifications-drop-box > .notification > .avatar-img {
+    min-width: 40px;
+    min-height: 40px;
+    margin-right: 20px;
+}
+.notifications-drop-box > .notification > .message {
+    overflow: auto;
+}
+.notifications-drop-box > .notification .date {
+    color: colors.$secondaryText;
+}
+.notifications-drop-box > .notification .from {
+    font-weight: bold;
+}
+.notifications-drop-box > .notification .chat {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: colors.$secondaryText;
 }

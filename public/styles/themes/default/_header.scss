@@ -14,12 +14,12 @@
     outline: none;
     transition: 0.3s;
     user-select: none;
-}
-.mdl-layout__header-row .mdl-navigation__link:hover {
-    background-color: colors.$buttonSecondaryHover;
-}
-.mdl-layout__header-row .mdl-navigation__link:hover .mdl-badge[data-badge]:after {
-    border-color: colors.$buttonSecondaryHover;
+    &:hover {
+        background-color: colors.$buttonSecondaryHover;
+        .mdl-badge[data-badge]:after {
+            border-color: colors.$buttonSecondaryHover;
+        }
+    }
 }
 .mdl-badge[data-badge]:after {
     background: colors.$primaryBadge;
@@ -28,10 +28,11 @@
     border: 2px solid colors.$primaryBadgeBorder;
     transition: 0.3s;
 }
-.mdl-navigation {
-    display: contents;
+.mobile-only .mdl-navigation {
+    flex-grow: 1;
+    position: relative;
 }
-.mdl-navigation > .account-btn {
+.mdl-navigation .account-btn {
     display: flex;
     height: 100%;
     align-items: center;
@@ -61,13 +62,13 @@
     width: 100%;
     box-sizing: border-box;
     transition: 0.3s;
-}
-.search-forum-block > input:focus {
-    background-color: colors.$headerSearchInputFocus;
-}
-.search-forum-block > input::placeholder {
-    color: colors.$headerSearchInputPlaceholder;
-    opacity: 1;
+    &:focus {
+        background-color: colors.$headerSearchInputFocus;
+    }
+    &::placeholder {
+        color: colors.$headerSearchInputPlaceholder;
+        opacity: 1;
+    }
 }
 .mobile-only {
     display: none;

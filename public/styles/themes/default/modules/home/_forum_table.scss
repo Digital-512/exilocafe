@@ -8,11 +8,12 @@
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     background-color: global_colors.$forumContentBackground;
     border-collapse: collapse;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
-.forum-table:last-child {
-    margin-bottom: 0;
-}
-.forum-table td, th {
+.forum-table td,
+th {
     border-bottom: 1px solid global_colors.$forumContentBorder;
     text-align: left;
     color: global_colors.$forumContentPrimaryText;
@@ -55,7 +56,7 @@
 .forum-table .last-post-text > .author {
     color: global_colors.$urlText;
     text-decoration: none;
-}
-.forum-table .last-post-text > .author:hover {
-    text-decoration: underline;
+    &:hover {
+        text-decoration: underline;
+    }
 }

@@ -9,9 +9,9 @@
     margin-bottom: 40px;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     background-color: colors.$forumContentBackground;
-}
-.forum-sidebar > .sidebar-card:last-child {
-    margin-bottom: 0;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 .forum-sidebar > .sidebar-card > .header {
     padding: 20px 35px;
@@ -26,18 +26,18 @@
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid colors.$forumContentBorder;
-}
-.forum-sidebar > .sidebar-card > .content > .sidebar-row:last-child {
-    border-bottom: none;
+    &:last-child {
+        border-bottom: none;
+    }
 }
 .forum-sidebar > .sidebar-card > .content > .post-row {
     flex-direction: column;
     cursor: pointer;
     padding: 30px;
     transition: 0.3s;
-}
-.forum-sidebar > .sidebar-card > .content > .post-row:hover {
-    background-color: colors.$forumContentArticleHover;
+    &:hover {
+        background-color: colors.$forumContentArticleHover;
+    }
 }
 .forum-sidebar > .sidebar-card > .content > .post-row > .post-title {
     color: colors.$forumContentPrimaryText;
@@ -62,21 +62,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.forum-sidebar > .sidebar-card > .content > .sidebar-row > .block:last-child {
-    border-right: none;
+    &:last-child {
+        border-right: none;
+    }
 }
 .forum-sidebar > .sidebar-card > .content > .sidebar-row > .block > .big-text {
     font-size: 25px;
     line-height: 25px;
     color: colors.$forumContentPrimaryText;
 }
-.forum-sidebar > .sidebar-card > .content > .sidebar-row > .block > .member-link {
+.forum-sidebar
+    > .sidebar-card
+    > .content
+    > .sidebar-row
+    > .block
+    > .member-link {
     font-size: 18px;
     cursor: pointer;
     text-decoration: none;
     color: colors.$urlText;
-}
-.forum-sidebar > .sidebar-card > .content > .sidebar-row > .block > .member-link:hover {
-    text-decoration: underline;
+    &:hover {
+        text-decoration: underline;
+    }
 }
