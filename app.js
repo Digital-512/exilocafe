@@ -5,8 +5,6 @@ const compression = require('compression');
 const helmet = require('helmet');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const http = require('http');
-const https = require('https');
 const initializeDatabases = require('./db');
 const index = require('./routes/index');
 const config = require('./config/config.json');
@@ -18,17 +16,12 @@ const port = config.general.port;
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-// By default, HTTP server has a socket pool limit of only 5.
-// Allow as many sockets as possible.
-http.globalAgent.maxSockets = config.sockets.httpMaxSockets || Infinity;
-https.globalAgent.maxSockets = config.sockets.httpsMaxSockets || Infinity;
-
 // Use gzip compression and security patch
 app.use(compression());
 app.use(helmet());
 
 // Initialize public directory
-app.use(express.static(path.join(__dirname, 'public'), { maxAge: config.cache.maxAge }));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Support parsing of application/json type post data
 app.use(express.json());
