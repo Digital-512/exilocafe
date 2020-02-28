@@ -4,6 +4,13 @@
         "defaultLanguage": "en_US",
         "defaultModule": "home"
     },
+    "sockets": {
+        "httpMaxSockets": null,
+        "httpsMaxSockets": null
+    },
+    "cache": {
+        "maxAge": 0
+    },
     "installedModules": {
         "home": {
             "permission": "exilocafe.default"

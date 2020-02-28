@@ -1,0 +1,22 @@
+{
+    "name": "Exilocafe",
+    "short_name": "Exilocafe",
+    "description": "Fast and lightweight forum engine.",
+    "theme_color": "#f9f9fc",
+    "background_color": "#f9f9fc",
+    "display": "standalone",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/styles/icons/app-icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/styles/icons/app-icon-maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

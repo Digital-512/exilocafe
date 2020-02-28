@@ -1,16 +1,5 @@
 "use strict";
 
-// Navigation
-let mdl_nav_links = $('.mdl-navigation__link');
-mdl_nav_links.each(function (i, el) {
-    let data_location = $(el).data('location');
-    if (data_location) {
-        $(el).click(function () {
-            location.href = '/' + data_location;
-        });
-    }
-});
-
 // Close the dropdown if the user clicks outside of it
 $(window).click(function (event) {
     let dropdowns = $('.dropdown-content');

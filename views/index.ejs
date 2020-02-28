@@ -1,41 +1,36 @@
 <% let theme = 'default'; %>
+<% let moduleData = { config, lang, database, theme } %>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
+    <title>Test site name</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Test site description">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="application-name" content="Test site name">
-    <title>Test site name</title>
-
-    <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#000000">
-    <link rel="icon" sizes="192x192" href="/styles/themes/<%= theme %>/images/android-desktop.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Test site name">
-    <link rel="apple-touch-icon-precomposed" href="/styles/themes/<%= theme %>/images/ios-desktop.png">
+    <meta name="theme-color" content="#f9f9fc">
+    <link rel="apple-touch-icon" href="/styles/icons/app-icon-apple.png">
+    <link rel="manifest" href="/assets/manifest.json">
+    <link rel="icon" href="/styles/icons/favicon.ico">
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="/styles/themes/<%= theme %>/images/windows-desktop.png">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-navbutton-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+    <link rel="preload" href="/styles/material/material.min.css" as="style">
+    <link rel="preload" href="/styles/font-awesome/css/font-awesome.min.css" as="style">
+    <link rel="preload" href="/styles/themes/<%= theme %>/main.css" as="style">
 
-    <link rel="icon" href="/styles/themes/<%= theme %>/images/favicon.png">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/styles/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/styles/material/material.min.css">
     <link rel="stylesheet" href="/styles/themes/<%= theme %>/main.css">
-    <script src="/scripts/jquery-3.4.1.min.js"></script>
     <!-- Include module head -->
-    <%- include('modules/' + module + '/head', { config: config, lang: lang, database: database, theme: theme }); %>
+    <%- include('modules/' + module + '/head', moduleData); %>
 </head>
 
 <body>
@@ -45,15 +40,15 @@
                 <!-- Title -->
                 <span class="mdl-layout-title">Exilocafe</span>
                 <nav class="mdl-navigation page-nav">
-                    <span class="mdl-navigation__link" id="nav-home" data-location="home"><i class="material-icons">home</i></span>
+                    <a href="/home" class="mdl-navigation__link" id="nav-home"><i class="material-icons">home</i></a>
                     <div class="mdl-tooltip mdl-tooltip--large" for="nav-home">Home</div>
-                    <span class="mdl-navigation__link" id="nav-newposts" data-location="newposts"><i class="material-icons">timelapse</i></span>
+                    <a href="/newposts" class="mdl-navigation__link" id="nav-newposts"><i class="material-icons">timelapse</i></a>
                     <div class="mdl-tooltip mdl-tooltip--large" for="nav-newposts">New posts</div>
-                    <span class="mdl-navigation__link" id="nav-users" data-location="users"><i class="material-icons">people_alt</i></span>
+                    <a href="/users" class="mdl-navigation__link" id="nav-users"><i class="material-icons">people_alt</i></a>
                     <div class="mdl-tooltip mdl-tooltip--large" for="nav-users">Users</div>
-                    <span class="mdl-navigation__link" id="nav-rules" data-location="rules"><i class="material-icons">book</i></span>
+                    <a href="/rules" class="mdl-navigation__link" id="nav-rules"><i class="material-icons">book</i></a>
                     <div class="mdl-tooltip mdl-tooltip--large" for="nav-rules">Rules</div>
-                    <span class="mdl-navigation__link" id="nav-tags" data-location="tags"><i class="material-icons">local_offer</i></span>
+                    <a href="/tags" class="mdl-navigation__link" id="nav-tags"><i class="material-icons">local_offer</i></a>
                     <div class="mdl-tooltip mdl-tooltip--large" for="nav-tags">Tags</div>
                 </nav>
                 <!-- Add spacer, to align navigation to the right -->
@@ -61,7 +56,11 @@
                 <!-- Navigation -->
                 <nav class="mdl-navigation">
                     <div class="desktop-only">
-                        <div class="search-forum-block"><i class="material-icons">search</i><input type="text" name="search" id="search-forum-input" placeholder="<%= lang.indexPage.msg.searchForum %>"></div>
+                        <div class="search-forum-block">
+                            <i class="material-icons">search</i>
+                            <label for="search-forum-input" class="sr-only"><%= lang.indexPage.msg.searchForum %></label>
+                            <input type="text" name="search" id="search-forum-input" placeholder="<%= lang.indexPage.msg.searchForum %>">
+                        </div>
                         <div class="has-dropdown">
                             <span class="mdl-navigation__link"><i class="material-icons">question_answer</i></span>
                             <div class="dropdown-content">
@@ -110,7 +109,7 @@
                                 <span><i class="fa fa-envelope-open" aria-hidden="true"></i>See all notifications</span>
                             </div>
                         </div>
-                        <span class="mdl-navigation__link" id="account-settings-btn"><i class="material-icons">settings</i></span>
+                        <span class="mdl-navigation__link account-settings-btn"><i class="material-icons">settings</i></span>
                     </div>
                     <div class="has-dropdown nav-size">
                         <span class="mdl-navigation__link account-btn">
@@ -184,7 +183,7 @@
                             <span><i class="fa fa-envelope-open" aria-hidden="true"></i>See all notifications</span>
                         </div>
                     </div>
-                    <span class="mdl-navigation__link" id="account-settings-btn"><i class="material-icons">settings</i></span>
+                    <span class="mdl-navigation__link account-settings-btn"><i class="material-icons">settings</i></span>
                 </nav>
             </div>
         </header>
@@ -201,14 +200,15 @@
         <main class="mdl-layout__content">
             <div class="page-content">
                 <!-- Include module body -->
-                <%- include('modules/' + module + '/module', { config: config, lang: lang, database: database, theme: theme }); %>
+                <%- include('modules/' + module + '/module', moduleData); %>
                 <!-- Include footer -->
-                <%- include('includes/footer', { config: config, lang: lang, database: database }); %>
+                <%- include('includes/footer', moduleData); %>
             </div>
         </main>
     </div>
-    <script src="/scripts/material.min.js"></script>
-    <script src="/scripts/main.js"></script>
+    <script defer src="/scripts/material.min.js"></script>
+    <script defer src="/scripts/jquery-3.4.1.min.js"></script>
+    <script defer src="/scripts/main.js"></script>
 </body>
 
 </html>
