@@ -26,5 +26,12 @@
     "express": "^4.17.1",
     "helmet": "^3.21.2",
     "mongodb": "^3.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "postcss-cli": "^7.1.0",
+    "sass": "^1.26.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
   }
 }
