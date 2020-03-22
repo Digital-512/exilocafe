@@ -2,7 +2,7 @@
     "name": "Exilocafe",
     "short_name": "Exilocafe",
     "description": "Fast and lightweight forum engine.",
-    "theme_color": "#f9f9fc",
+    "theme_color": "#ffffff",
     "background_color": "#f9f9fc",
     "display": "standalone",
     "start_url": "/",

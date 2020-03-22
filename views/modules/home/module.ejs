@@ -27,7 +27,7 @@
                     <td class="table-align--center resp--hide1">25</td>
                     <td class="resp--hide2">
                         <div class="row-align--center">
-                            <div class="round-img last-post-icon" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                            <div class="round-img last-post-icon" style="background-image: url('/styles/themes/<%= globalData.theme %>/images/default-avatar.png');"></div>
                             <div class="category-text last-post-text">
                                 <a class="author" href="">digital512</a>
                                 <div class="date">Mar 14, 2019, 17:45</div>
@@ -49,7 +49,7 @@
                     <td class="table-align--center resp--hide1">98</td>
                     <td class="resp--hide2">
                         <div class="row-align--center">
-                            <div class="round-img last-post-icon" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                            <div class="round-img last-post-icon" style="background-image: url('/styles/themes/<%= globalData.theme %>/images/default-avatar.png');"></div>
                             <div class="category-text last-post-text">
                                 <a class="author" href="">digital512</a>
                                 <div class="date">Mar 14, 2019, 17:45</div>
@@ -80,7 +80,7 @@
                 <td class="table-align--center resp--hide1">25</td>
                 <td class="resp--hide2">
                     <div class="row-align--center">
-                        <div class="round-img last-post-icon" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                        <div class="round-img last-post-icon" style="background-image: url('/styles/themes/<%= globalData.theme %>/images/default-avatar.png');"></div>
                         <div class="category-text last-post-text">
                             <a class="author" href="">digital512</a>
                             <div class="date">Mar 14, 2019, 17:45</div>
@@ -102,7 +102,7 @@
                 <td class="table-align--center resp--hide1">98</td>
                 <td class="resp--hide2">
                     <div class="row-align--center">
-                        <div class="round-img last-post-icon" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                        <div class="round-img last-post-icon" style="background-image: url('/styles/themes/<%= globalData.theme %>/images/default-avatar.png');"></div>
                         <div class="category-text last-post-text">
                             <a class="author" href="">digital512</a>
                             <div class="date">Mar 14, 2019, 17:45</div>
@@ -124,7 +124,7 @@
                 <td class="table-align--center resp--hide1">98</td>
                 <td class="resp--hide2">
                     <div class="row-align--center">
-                        <div class="round-img last-post-icon" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                        <div class="round-img last-post-icon" style="background-image: url('/styles/themes/<%= globalData.theme %>/images/default-avatar.png');"></div>
                         <div class="category-text last-post-text">
                             <a class="author" href="">digital512</a>
                             <div class="date">Mar 14, 2019, 17:45</div>
@@ -136,14 +136,14 @@
         <div class="users-box">
             <div class="header">Online users: <i>31</i></div>
             <div class="content">
-                <div id="user-id-1" class="round-img btn" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                <div id="user-id-1" class="round-img btn" style="background-image: url('/styles/themes/<%= globalData.theme %>/images/default-avatar.png');"></div>
                 <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large" for="user-id-1">digital512</div>
-                <div id="user-id-2" class="round-img btn" style="background-image: url('/styles/themes/<%= theme %>/images/default-avatar.png');"></div>
+                <div id="user-id-2" class="round-img btn" style="background-image: url('/styles/themes/<%= globalData.theme %>/images/default-avatar.png');"></div>
                 <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large" for="user-id-2">Kryptoners</div>
                 <div class="round-icon btn"><i class="material-icons">more_horiz</i></div>
             </div>
         </div>
     </div>
     <!-- Include sidebar -->
-    <%- include('../../includes/sidebar', { config: config, lang: lang, database: database, theme: theme }); %>
+    <%- include('../../includes/sidebar', { globalData: globalData }); %>
 </div>
