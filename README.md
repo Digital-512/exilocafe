@@ -1,4 +1,4 @@
-![Exilocafe Logo](https://raw.githubusercontent.com/Digital-512/external-files-1/master/exilocafe/main_logo/main_logo1.png "Exilocafe Logo")
+<img src="https://raw.githubusercontent.com/Digital-512/external-files-1/master/exilocafe/main_logo/main_logo1.png" width="500" alt="Exilocafe Logo" title="Exilocafe Logo">
 #
 Fast and lightweight forum engine for Node.js
 
