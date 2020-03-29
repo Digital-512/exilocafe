@@ -1,0 +1,114 @@
+<div class="home-header-img">
+    <div class="title">Forums</div>
+</div>
+<div class="module-content">
+    <div class="main-forum">
+        <div class="forum-box">
+            <div class="header"><a href="">Home</a><i class="material-icons">keyboard_arrow_right</i><span>Analytics dashboard tools</span></div>
+            <div class="category-menu">
+                <div class="content">
+                    <div class="btn primary"><i class="fa fa-file-text" aria-hidden="true"></i>New topic</div>
+                    <div class="mdl-layout-spacer"></div>
+                    <div class="has-dropdown">
+                        <div class="btn"><i class="fa fa-clock-o" aria-hidden="true"></i><span>New only</span><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                        <div class="dropdown-content">
+                            <span><i class="fa fa-fw fa-globe" aria-hidden="true"></i>All</span>
+                            <span><i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>New only</span>
+                            <span><i class="fa fa-fw fa-user-circle-o" aria-hidden="true"></i>Only by me</span>
+                            <span><i class="fa fa-fw fa-thumb-tack" aria-hidden="true"></i>Pinned only</span>
+                        </div>
+                    </div>
+                    <div class="has-dropdown">
+                        <div class="btn"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i><span>Sort by</span><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                        <div class="dropdown-content">
+                            <span><i class="fa fa-fw fa-check" aria-hidden="true"></i>Newest to oldest</span>
+                            <span><i class="fa fa-fw" aria-hidden="true"></i>Oldest to newest</span>
+                            <span><i class="fa fa-fw" aria-hidden="true"></i>Most posts</span>
+                            <span><i class="fa fa-fw" aria-hidden="true"></i>Most views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="forum-table">
+            <tr>
+                <th class="th-width--stretch">Topics</th>
+                <th class="table-align--center resp--hide1">Replies</th>
+                <th class="table-align--center resp--hide1">Views</th>
+                <th class="resp--hide2">Last post</th>
+            </tr>
+            <tr class="category-link">
+                <td>
+                    <div class="row-align--center">
+                        <div class="round-icon category-icon"><i class="fa fa-folder" aria-hidden="true"></i></div>
+                        <div class="category-text">
+                            <div class="title">Analytics dashboard tools</div>
+                            <div class="subtitle">Mar 14, 2019, 17:45</div>
+                        </div>
+                    </div>
+                </td>
+                <td class="table-align--center resp--hide1">7</td>
+                <td class="table-align--center resp--hide1">205</td>
+                <td class="resp--hide2">
+                    <div class="row-align--center">
+                        <div class="round-img last-post-icon" style="background-image: url('/styles/themes/<%= globalData.theme %>/images/default-avatar.png');"></div>
+                        <div class="category-text last-post-text">
+                            <a class="author" href="">digital512</a>
+                            <div class="date">Mar 14, 2019, 17:45</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="category-link">
+                <td>
+                    <div class="row-align--center">
+                        <div class="round-icon category-icon"><i class="fa fa-folder" aria-hidden="true"></i></div>
+                        <div class="category-text">
+                            <div class="title">CRM courses thread</div>
+                            <div class="subtitle">Mar 14, 2019, 17:45</div>
+                        </div>
+                    </div>
+                </td>
+                <td class="table-align--center resp--hide1">17</td>
+                <td class="table-align--center resp--hide1">958</td>
+                <td class="resp--hide2">
+                    <div class="row-align--center">
+                        <div class="round-img last-post-icon" style="background-image: url('/styles/themes/<%= globalData.theme %>/images/default-avatar.png');"></div>
+                        <div class="category-text last-post-text">
+                            <a class="author" href="">digital512</a>
+                            <div class="date">Mar 14, 2019, 17:45</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="category-link">
+                <td>
+                    <div class="row-align--center">
+                        <div class="round-icon category-icon"><i class="fa fa-folder" aria-hidden="true"></i></div>
+                        <div class="category-text">
+                            <div class="title">CRM courses thread</div>
+                            <div class="subtitle">Mar 14, 2019, 17:46</div>
+                        </div>
+                    </div>
+                </td>
+                <td class="table-align--center resp--hide1">17</td>
+                <td class="table-align--center resp--hide1">978</td>
+                <td class="resp--hide2">
+                    <div class="row-align--center">
+                        <div class="round-img last-post-icon" style="background-image: url('/styles/themes/<%= globalData.theme %>/images/default-avatar.png');"></div>
+                        <div class="category-text last-post-text">
+                            <a class="author" href="">digital512</a>
+                            <div class="date">Mar 14, 2019, 17:45</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <!-- Include pagination -->
+        <%- include('../../includes/pagination'); %>
+        <!-- Include online users -->
+        <%- include('../../includes/users_box', { globalData: globalData }); %>
+    </div>
+    <!-- Include sidebar -->
+    <%- include('../../includes/sidebar', { globalData: globalData }); %>
+</div>

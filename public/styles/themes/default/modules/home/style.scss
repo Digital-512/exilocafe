@@ -1,0 +1,18 @@
+@use 'forum_table';
+@use 'category_menu';
+@use 'responsiveness';
+
+.module-content {
+    display: flex;
+    padding: 80px 80px 40px 80px;
+    margin-top: -141px;
+}
+.module-content > .main-forum {
+    width: 100%;
+}
+.module-content > .main-forum > * {
+    margin-bottom: 40px;
+}
+.module-content > .main-forum > *:last-child {
+    margin-bottom: 0;
+}

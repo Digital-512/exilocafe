@@ -133,16 +133,8 @@
                 </td>
             </tr>
         </table>
-        <div class="users-box">
-            <div class="header">Online users: <i>31</i></div>
-            <div class="content">
-                <div id="user-id-1" class="round-img btn" style="background-image: url('/styles/themes/<%= globalData.theme %>/images/default-avatar.png');"></div>
-                <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large" for="user-id-1">digital512</div>
-                <div id="user-id-2" class="round-img btn" style="background-image: url('/styles/themes/<%= globalData.theme %>/images/default-avatar.png');"></div>
-                <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large" for="user-id-2">Kryptoners</div>
-                <div class="round-icon btn"><i class="material-icons">more_horiz</i></div>
-            </div>
-        </div>
+        <!-- Include online users -->
+        <%- include('../../includes/users_box', { globalData: globalData }); %>
     </div>
     <!-- Include sidebar -->
     <%- include('../../includes/sidebar', { globalData: globalData }); %>

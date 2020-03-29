@@ -1,0 +1,56 @@
+@use 'colors' as colors;
+
+.pagination {
+    display: flex;
+    align-items: center;
+}
+.pagination > .line {
+    margin-right: 15px;
+    height: 0;
+    border-bottom: 1px solid colors.$paginationLine;
+}
+.pagination > .divider {
+    font-size: 20px;
+    margin-right: 15px;
+    user-select: none;
+}
+.pagination > .btn {
+    min-width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 10px;
+    margin-right: 15px;
+    user-select: none;
+    box-shadow: colors.$forumCardShadow;
+    color: colors.$buttonSecondaryText2;
+    background-color: colors.$buttonSecondary;
+    &:hover {
+        background-color: colors.$buttonSecondaryHover;
+    }
+    &:active {
+        background-color: colors.$buttonSecondaryActive;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.pagination > .btn.primary {
+    color: colors.$buttonPrimaryText;
+    background-color: colors.$buttonPrimary;
+    &:hover {
+        background-color: colors.$buttonPrimaryHover;
+    }
+    &:active {
+        background-color: colors.$buttonPrimaryActive;
+    }
+}
+.pagination > .btn > i.material-icons {
+    font-size: 20px;
+}
+.mobile-only.pagination {
+    display: none;
+}

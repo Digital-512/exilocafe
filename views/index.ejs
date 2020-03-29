@@ -30,7 +30,7 @@
     <link rel="stylesheet" type="text/css" href="/styles/material/material.min.css">
     <link rel="stylesheet" type="text/css" href="/styles/themes/<%= globalData.theme %>/main.css">
 
-    <script async src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CElement.prototype.closest"></script>
+    <script async src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2CElement.prototype.closest"></script>
     <script defer src="/scripts/material/material.min.js"></script>
     <script defer src="/scripts/main.js"></script>
 
@@ -60,7 +60,7 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation -->
                 <nav class="mdl-navigation">
-                    <div class="desktop-only">
+                    <div class="desktop-only header">
                         <div class="search-forum-block">
                             <i class="material-icons">search</i>
                             <label for="search-forum-input" class="sr-only"><%= lang.searchForum %></label>
@@ -86,8 +86,8 @@
                                     </div>
                                 </div>
                                 <div class="divider"></div>
-                                <span><i class="fa fa-check" aria-hidden="true"></i>Mark all chats read</span>
-                                <span><i class="fa fa-envelope-open" aria-hidden="true"></i>See all chats</span>
+                                <span><i class="fa fa-fw fa-check" aria-hidden="true"></i>Mark all chats read</span>
+                                <span><i class="fa fa-fw fa-envelope-open" aria-hidden="true"></i>See all chats</span>
                             </div>
                         </div>
                         <div class="has-dropdown">
@@ -110,8 +110,8 @@
                                     </div>
                                 </div>
                                 <div class="divider"></div>
-                                <span><i class="fa fa-check" aria-hidden="true"></i>Mark all notifications read</span>
-                                <span><i class="fa fa-envelope-open" aria-hidden="true"></i>See all notifications</span>
+                                <span><i class="fa fa-fw fa-check" aria-hidden="true"></i>Mark all notifications read</span>
+                                <span><i class="fa fa-fw fa-envelope-open" aria-hidden="true"></i>See all notifications</span>
                             </div>
                         </div>
                         <span class="mdl-navigation__link account-settings-btn"><i class="material-icons">settings</i></span>
@@ -121,22 +121,22 @@
                             <span class="round-img avatar-img" style="background-image: url('/styles/themes/<%= globalData.theme %>/images/default-avatar.png');"></span>
                         </span>
                         <div class="dropdown-content">
-                            <span><i class="fa fa-circle user-status online" aria-hidden="true"></i>digital512</span>
+                            <span><i class="fa fa-fw fa-circle user-status online" aria-hidden="true"></i>digital512</span>
                             <div class="divider"></div>
-                            <span><i class="fa fa-circle user-status online" aria-hidden="true"></i>Online</span>
-                            <span><i class="fa fa-circle user-status away" aria-hidden="true"></i>Away</span>
-                            <span><i class="fa fa-circle user-status no-disturb" aria-hidden="true"></i>Do not disturb</span>
-                            <span><i class="fa fa-circle user-status offline" aria-hidden="true"></i>Invisible</span>
+                            <span><i class="fa fa-fw fa-circle user-status online" aria-hidden="true"></i>Online</span>
+                            <span><i class="fa fa-fw fa-circle user-status away" aria-hidden="true"></i>Away</span>
+                            <span><i class="fa fa-fw fa-circle user-status no-disturb" aria-hidden="true"></i>Do not disturb</span>
+                            <span><i class="fa fa-fw fa-circle user-status offline" aria-hidden="true"></i>Invisible</span>
                             <div class="divider"></div>
-                            <span><i class="fa fa-tasks" aria-hidden="true"></i>Admin panel</span>
-                            <span><i class="fa fa-cog" aria-hidden="true"></i>Settings</span>
+                            <span><i class="fa fa-fw fa-tasks" aria-hidden="true"></i>Admin panel</span>
+                            <span><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</span>
                             <div class="divider"></div>
-                            <span><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</span>
+                            <span><i class="fa fa-fw fa-sign-out" aria-hidden="true"></i>Logout</span>
                         </div>
                     </div>
                 </nav>
             </div>
-            <div class="mobile-only mdl-layout__header-row">
+            <div class="mobile-only header mdl-layout__header-row">
                 <!-- Navigation for mobile devices -->
                 <nav class="mdl-navigation">
                     <span class="mdl-navigation__link" id="mobile-search-btn"><i class="material-icons">search</i></span>
@@ -160,8 +160,8 @@
                                 </div>
                             </div>
                             <div class="divider"></div>
-                            <span><i class="fa fa-check" aria-hidden="true"></i>Mark all chats read</span>
-                            <span><i class="fa fa-envelope-open" aria-hidden="true"></i>See all chats</span>
+                            <span><i class="fa fa-fw fa-check" aria-hidden="true"></i>Mark all chats read</span>
+                            <span><i class="fa fa-fw fa-envelope-open" aria-hidden="true"></i>See all chats</span>
                         </div>
                     </div>
                     <div class="has-dropdown">
@@ -184,8 +184,8 @@
                                 </div>
                             </div>
                             <div class="divider"></div>
-                            <span><i class="fa fa-check" aria-hidden="true"></i>Mark all notifications read</span>
-                            <span><i class="fa fa-envelope-open" aria-hidden="true"></i>See all notifications</span>
+                            <span><i class="fa fa-fw fa-check" aria-hidden="true"></i>Mark all notifications read</span>
+                            <span><i class="fa fa-fw fa-envelope-open" aria-hidden="true"></i>See all notifications</span>
                         </div>
                     </div>
                     <span class="mdl-navigation__link account-settings-btn"><i class="material-icons">settings</i></span>

@@ -1,0 +1,687 @@
+.mdl-layout__header {
+  background-color: #fff;
+  color: #000;
+}
+
+.mdl-layout__drawer-button i {
+  color: #00064b;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+  color: #00064b;
+  background-color: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+  user-select: none;
+}
+.mdl-layout__header-row .mdl-navigation__link:hover {
+  background-color: #f5f6f7;
+}
+.mdl-layout__header-row .mdl-navigation__link:hover .mdl-badge[data-badge]:after {
+  border-color: #f5f6f7;
+}
+
+.mdl-badge[data-badge]:after {
+  background: #39b54a;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+
+.mobile-only.header .mdl-navigation {
+  flex-grow: 1;
+  position: relative;
+}
+
+.mdl-navigation .account-btn {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.account-btn > .avatar-img {
+  width: 35px;
+  height: 35px;
+}
+
+.search-forum-block {
+  width: 500px;
+  margin: auto 30px;
+  position: relative;
+}
+
+.search-forum-block > i {
+  font-size: 22px;
+  color: #a8b7cd;
+  position: absolute;
+  top: 6px;
+  left: 20px;
+}
+
+.search-forum-block > input {
+  background-color: #f5f6f7;
+  border: none;
+  outline: none;
+  padding: 9px 25px 9px 50px;
+  border-radius: 20px;
+  width: 100%;
+  transition: 0.3s;
+}
+.search-forum-block > input:focus {
+  background-color: #ebeced;
+}
+.search-forum-block > input::placeholder {
+  color: #9c9eae;
+  opacity: 1;
+}
+
+.mobile-only.header {
+  display: none;
+  padding: 0 16px;
+}
+
+.desktop-only.header {
+  display: inherit;
+}
+
+.mobile-only.header .mdl-navigation__link {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.mdl-navigation.page-nav {
+  margin-left: 40px;
+  display: flex;
+}
+
+.page-nav .mdl-navigation__link {
+  color: #555;
+}
+
+.mdl-layout__drawer {
+  background: #fff;
+  border: none;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+  color: #212121;
+  cursor: pointer;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link > i {
+  margin-right: 20px;
+  font-size: 21px;
+  line-height: 3px;
+  margin-top: -2px;
+  color: #757575;
+}
+
+footer {
+  background-color: #fff;
+  color: #00064b;
+  display: flex;
+  align-items: center;
+  padding: 100px 50px;
+}
+
+footer > .col-2 {
+  display: flex;
+  padding: 0 100px;
+}
+
+footer > .col-1 > .title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+footer > .col-1 > .description {
+  color: #857f99;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+footer > .col-1 > .button-row {
+  display: flex;
+  flex-direction: row;
+}
+
+footer > .col-1 > .button-row > .button {
+  padding: 14px 50px;
+  border-radius: 4px;
+  border: 2px solid #e8eef1;
+  background-color: #fff;
+  margin: 0 15px 0 0;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  transition: 0.3s;
+}
+footer > .col-1 > .button-row > .button:hover {
+  background-color: #f5f6f7;
+}
+footer > .col-1 > .button-row > .button:last-child {
+  margin: 0;
+}
+
+footer > .col-1 > .button-row > .button.primary {
+  background-color: #39b54a;
+  border: 2px solid #39b54a;
+  color: #fff;
+}
+footer > .col-1 > .button-row > .button.primary:hover {
+  background-color: #32a041;
+  border: 2px solid #32a041;
+}
+
+footer > .col-2 > .sm-col {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+footer > .col-2 > .sm-col:last-child {
+  margin: 0;
+}
+
+footer > .col-2 > .sm-col > span {
+  line-height: 35px;
+  cursor: pointer;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+footer > .col-2 > .sm-col > span:hover {
+  color: #857f99;
+}
+
+.module-content > .forum-sidebar {
+  padding-left: 40px;
+  margin-top: 101px;
+}
+
+.forum-sidebar > .sidebar-card {
+  width: 300px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.forum-sidebar > .sidebar-card:last-child {
+  margin-bottom: 0;
+}
+
+.forum-sidebar > .sidebar-card > .header {
+  padding: 20px 35px;
+  border-bottom: 1px solid #e8eef1;
+  font-weight: bold;
+  color: #00064b;
+}
+
+.forum-sidebar > .sidebar-card > .content {
+  color: #857f99;
+}
+
+.forum-sidebar .content > .sidebar-row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e8eef1;
+}
+.forum-sidebar .content > .sidebar-row:last-child {
+  border-bottom: none;
+}
+
+.forum-sidebar .content > .post-row {
+  flex-direction: column;
+  cursor: pointer;
+  padding: 30px;
+  transition: 0.3s;
+}
+.forum-sidebar .content > .post-row:hover {
+  background-color: #f5f6f7;
+}
+
+.forum-sidebar .post-row > .post-title {
+  color: #00064b;
+}
+
+.forum-sidebar .post-row > .author-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.forum-sidebar .post-row > .author-box > .img {
+  min-width: 18px;
+  min-height: 18px;
+  margin-right: 10px;
+}
+
+.forum-sidebar .sidebar-row > .block {
+  border-right: 1px solid #e8eef1;
+  display: flex;
+  padding: 30px 0;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.forum-sidebar .sidebar-row > .block:last-child {
+  border-right: none;
+}
+
+.forum-sidebar .block > .big-text {
+  font-size: 25px;
+  line-height: 25px;
+  color: #00064b;
+}
+
+.forum-sidebar .block > .member-link {
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #006cfb;
+}
+.forum-sidebar .block > .member-link:hover {
+  text-decoration: underline;
+}
+
+.home-header-img {
+  width: 100%;
+  height: 231px;
+  background-image: url("/styles/themes/default/images/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+}
+
+.home-header-img > .title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.round-img {
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.round-icon {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.has-dropdown {
+  position: relative;
+}
+
+.mobile-only.header .has-dropdown {
+  position: initial;
+  flex-grow: 1;
+}
+
+.has-dropdown.nav-size {
+  height: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 200px;
+  overflow: auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  right: 0;
+  z-index: 1;
+}
+
+.mobile-only.header > nav .dropdown-content {
+  left: 0;
+  min-width: initial;
+}
+
+.dropdown-content span {
+  color: #000;
+  padding: 14px 16px;
+  display: block;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: 0.3s;
+}
+.dropdown-content span:hover {
+  background-color: #f5f6f7;
+}
+.dropdown-content span:active {
+  background-color: #ebeced;
+}
+
+.dropdown-content span > i {
+  margin-right: 10px;
+}
+
+.dropdown-content .divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #e8eef1;
+}
+
+.user-status.online {
+  color: #4caf50;
+}
+
+.user-status.away {
+  color: #ff6d00;
+}
+
+.user-status.no-disturb {
+  color: #f44336;
+}
+
+.user-status.offline {
+  color: #555;
+}
+
+.notifications-drop-box {
+  width: 400px;
+  max-height: 450px;
+  overflow: auto;
+}
+
+.mobile-only.header > nav .notifications-drop-box {
+  width: initial;
+}
+
+.notifications-drop-box > .notification {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-bottom: 1px solid #e8eef1;
+}
+.notifications-drop-box > .notification:hover {
+  background-color: #f5f6f7;
+}
+.notifications-drop-box > .notification:active {
+  background-color: #ebeced;
+}
+.notifications-drop-box > .notification:last-child {
+  border-bottom: none;
+}
+
+.notifications-drop-box > .notification > .avatar-img {
+  min-width: 40px;
+  min-height: 40px;
+  margin-right: 20px;
+}
+
+.notifications-drop-box > .notification > .message {
+  overflow: auto;
+}
+
+.notifications-drop-box > .notification .date {
+  color: #857f99;
+}
+
+.notifications-drop-box > .notification .from {
+  font-weight: bold;
+}
+
+.notifications-drop-box > .notification .chat {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #857f99;
+}
+
+.users-box > .content {
+  padding: 20px 35px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.users-box > .content > .btn {
+  min-width: 45px;
+  min-height: 45px;
+  margin-right: 15px;
+  cursor: pointer;
+  outline: none;
+}
+.users-box > .content > .btn:last-child {
+  background-color: #eaeaea;
+  color: #a8a9b5;
+  height: 45px;
+  margin-right: 0;
+  user-select: none;
+}
+.users-box > .content > .btn:last-child > i {
+  font-size: 27px;
+}
+
+.forum-box {
+  width: 100%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.forum-box > .header {
+  padding: 20px 35px;
+  border-bottom: 1px solid #e8eef1;
+  font-weight: bold;
+  color: #00064b;
+}
+
+.forum-box > .header > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #555;
+}
+.forum-box > .header > a:hover {
+  text-decoration: underline;
+}
+
+.forum-box > .header > i {
+  font-style: inherit;
+  color: #39b54a;
+}
+
+.forum-box > .header > i.material-icons {
+  line-height: 3px;
+  font-size: 20px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.pagination > .line {
+  margin-right: 15px;
+  height: 0;
+  border-bottom: 1px solid #e4ebed;
+}
+
+.pagination > .divider {
+  font-size: 20px;
+  margin-right: 15px;
+  user-select: none;
+}
+
+.pagination > .btn {
+  min-width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0 10px;
+  margin-right: 15px;
+  user-select: none;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  color: #00064b;
+  background-color: #fff;
+}
+.pagination > .btn:hover {
+  background-color: #f5f6f7;
+}
+.pagination > .btn:active {
+  background-color: #ebeced;
+}
+.pagination > .btn:last-child {
+  margin-right: 0;
+}
+
+.pagination > .btn.primary {
+  color: #fff;
+  background-color: #39b54a;
+}
+.pagination > .btn.primary:hover {
+  background-color: #32a041;
+}
+.pagination > .btn.primary:active {
+  background-color: #288134;
+}
+
+.pagination > .btn > i.material-icons {
+  font-size: 20px;
+}
+
+.mobile-only.pagination {
+  display: none;
+}
+
+@media only screen and (max-width: 1600px) {
+  .page-content > .module-content {
+    padding: 80px 40px 40px 40px;
+  }
+
+  .home-header-img {
+    padding: 80px 40px 80px 40px;
+  }
+
+  .forum-box > .header {
+    padding: 20px 25px;
+  }
+
+  .users-box > .content {
+    padding: 20px 25px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .module-content {
+    flex-direction: column;
+  }
+
+  .module-content > .forum-sidebar {
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  .forum-sidebar > .sidebar-card {
+    width: initial;
+  }
+
+  .forum-sidebar > .sidebar-card > .header {
+    padding: 20px 25px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mdl-navigation.page-nav {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer > .col-2 {
+    padding: 0;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .page-content > .module-content {
+    padding: 80px 0 40px 0;
+  }
+}
+@media only screen and (max-width: 875px) {
+  .resp--hide2 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .resp--hide1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .desktop-only.header,
+.desktop-only.pagination {
+    display: none;
+  }
+
+  .mobile-only.header {
+    display: inherit;
+  }
+
+  .mobile-only.pagination {
+    display: flex;
+  }
+
+  footer > .col-1 > .button-row {
+    flex-direction: column;
+  }
+
+  footer > .col-1 > .button-row > .button {
+    margin: 0 0 15px 0;
+  }
+
+  footer > .col-2 {
+    flex-direction: column;
+  }
+
+  footer > .col-2 > .sm-col {
+    margin: 0;
+  }
+
+  footer > .col-2 > .sm-col > span {
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid #e8eef1;
+    background-color: #fff;
+    white-space: initial;
+    margin: 0 0 15px 0;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+  }
+  footer > .col-2 > .sm-col > span:hover {
+    background-color: #f5f6f7;
+    color: inherit;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9fc;
+}
+
+.mdl-layout__container.has-scrolling-header .mdl-layout__content {
+  overflow-y: initial;
+  overflow-x: initial;
+  overflow: visible;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -16,9 +16,9 @@ window.addEventListener('click', function (event) {
         var content = dropdownButton.querySelector('.dropdown-content');
         if (!content.style.display || content.style.display === 'none') {
             content.style.display = 'block';
-        } else if (event.target.closest('.dropdown-content').length) {
+        } else if (event.target.closest('.dropdown-content')) {
             // Prevent closing if no-close is set.
-            if (event.target.closest('.dropdown-no-close').length) {
+            if (event.target.closest('.dropdown-no-close')) {
                 return;
             }
             // Wait some time before closing menu, so the user can see the effect.

@@ -1,0 +1,104 @@
+@use 'colors' as colors;
+
+.mdl-layout__header {
+    background-color: colors.$headerBackground;
+    color: colors.$headerText;
+}
+.mdl-layout__drawer-button i {
+    color: colors.$primaryText;
+}
+.mdl-layout__header-row .mdl-navigation__link {
+    color: colors.$primaryText;
+    background-color: inherit;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    user-select: none;
+    &:hover {
+        background-color: colors.$buttonSecondaryHover;
+        .mdl-badge[data-badge]:after {
+            border-color: colors.$primaryBadgeBorderHover;
+        }
+    }
+}
+.mdl-badge[data-badge]:after {
+    background: colors.$primaryBadge;
+    width: 20px;
+    height: 20px;
+    border: 2px solid colors.$primaryBadgeBorder;
+    transition: 0.3s;
+}
+.mobile-only.header .mdl-navigation {
+    flex-grow: 1;
+    position: relative;
+}
+.mdl-navigation .account-btn {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.account-btn > .avatar-img {
+    width: 35px;
+    height: 35px;
+}
+.search-forum-block {
+    width: 500px;
+    margin: auto 30px;
+    position: relative;
+}
+.search-forum-block > i {
+    font-size: 22px;
+    color: colors.$headerSearchIcon;
+    position: absolute;
+    top: 6px;
+    left: 20px;
+}
+.search-forum-block > input {
+    background-color: colors.$headerSearchInput;
+    border: none;
+    outline: none;
+    padding: 9px 25px 9px 50px;
+    border-radius: 20px;
+    width: 100%;
+    transition: 0.3s;
+    &:focus {
+        background-color: colors.$headerSearchInputFocus;
+    }
+    &::placeholder {
+        color: colors.$headerSearchInputPlaceholder;
+        opacity: 1;
+    }
+}
+.mobile-only.header {
+    display: none;
+    padding: 0 16px;
+}
+.desktop-only.header {
+    display: inherit;
+}
+.mobile-only.header .mdl-navigation__link {
+    flex-grow: 1;
+    text-align: center;
+}
+.mdl-navigation.page-nav {
+    margin-left: 40px;
+    display: flex;
+}
+.page-nav .mdl-navigation__link {
+    color: colors.$headerNavigationLinkText;
+}
+.mdl-layout__drawer {
+    background: colors.$drawerBackground;
+    border: none;
+}
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    color: colors.$drawerNavigationLinkText;
+    cursor: pointer;
+}
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link > i {
+    margin-right: 20px;
+    font-size: 21px;
+    line-height: 3px;
+    margin-top: -2px;
+    color: colors.$drawerNavigationLinkIcon;
+}
