@@ -1,9 +1,6 @@
 @use 'colors' as colors;
 
 @media only screen and (max-width: 1600px) {
-    .page-content > .module-content {
-        padding: 80px 40px 40px 40px;
-    }
     .home-header-img {
         padding: 80px 40px 80px 40px;
     }
@@ -15,13 +12,6 @@
     }
 }
 @media only screen and (max-width: 1280px) {
-    .module-content {
-        flex-direction: column;
-    }
-    .module-content > .forum-sidebar {
-        padding: 0;
-        margin-top: 40px;
-    }
     .forum-sidebar > .sidebar-card {
         width: initial;
     }
@@ -40,9 +30,6 @@
         padding: 0;
         margin-top: 50px;
         width: 100%;
-    }
-    .page-content > .module-content {
-        padding: 80px 0 40px 0;
     }
 }
 @media only screen and (max-width: 875px) {
@@ -66,10 +53,13 @@
     .mobile-only.pagination {
         display: flex;
     }
+    footer {
+        padding: 80px 40px;
+    }
     footer > .col-1 > .button-row {
         flex-direction: column;
     }
-    footer > .col-1 > .button-row > .button {
+    footer > .col-1 > .button-row > .btn {
         margin: 0 0 15px 0;
     }
     footer > .col-2 {

@@ -45,15 +45,15 @@
                 <!-- Title -->
                 <span class="mdl-layout-title">Exilocafe</span>
                 <nav class="mdl-navigation page-nav">
-                    <a href="/home" class="mdl-navigation__link" id="nav-home"><i class="material-icons">home</i></a>
+                    <a href="/home" class="mdl-navigation__link" id="nav-home" data-dynojax="root"><i class="material-icons">home</i></a>
                     <div class="mdl-tooltip mdl-tooltip--large" for="nav-home">Home</div>
-                    <a href="/newposts" class="mdl-navigation__link" id="nav-newposts"><i class="material-icons">timelapse</i></a>
+                    <a href="/newposts" class="mdl-navigation__link" id="nav-newposts" data-dynojax="root"><i class="material-icons">timelapse</i></a>
                     <div class="mdl-tooltip mdl-tooltip--large" for="nav-newposts">New posts</div>
-                    <a href="/users" class="mdl-navigation__link" id="nav-users"><i class="material-icons">people_alt</i></a>
+                    <a href="/users" class="mdl-navigation__link" id="nav-users" data-dynojax="root"><i class="material-icons">people_alt</i></a>
                     <div class="mdl-tooltip mdl-tooltip--large" for="nav-users">Users</div>
-                    <a href="/rules" class="mdl-navigation__link" id="nav-rules"><i class="material-icons">book</i></a>
+                    <a href="/rules" class="mdl-navigation__link" id="nav-rules" data-dynojax="root"><i class="material-icons">book</i></a>
                     <div class="mdl-tooltip mdl-tooltip--large" for="nav-rules">Rules</div>
-                    <a href="/tags" class="mdl-navigation__link" id="nav-tags"><i class="material-icons">local_offer</i></a>
+                    <a href="/tags" class="mdl-navigation__link" id="nav-tags" data-dynojax="root"><i class="material-icons">local_offer</i></a>
                     <div class="mdl-tooltip mdl-tooltip--large" for="nav-tags">Tags</div>
                 </nav>
                 <!-- Add spacer, to align navigation to the right -->
@@ -195,20 +195,20 @@
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">Exilocafe</span>
             <nav class="mdl-navigation">
-                <span class="mdl-navigation__link" data-location="home"><i class="material-icons">home</i>Home</span>
-                <span class="mdl-navigation__link" data-location="newposts"><i class="material-icons">timelapse</i>New posts</span>
-                <span class="mdl-navigation__link" data-location="users"><i class="material-icons">people_alt</i>Users</span>
-                <span class="mdl-navigation__link" data-location="rules"><i class="material-icons">book</i>Rules</span>
-                <span class="mdl-navigation__link" data-location="tags"><i class="material-icons">local_offer</i>Tags</span>
+                <a href="/home" class="mdl-navigation__link" data-dynojax="root"><i class="material-icons">home</i>Home</a>
+                <a href="/newposts" class="mdl-navigation__link" data-dynojax="root"><i class="material-icons">timelapse</i>New posts</a>
+                <a href="/users" class="mdl-navigation__link" data-dynojax="root"><i class="material-icons">people_alt</i>Users</a>
+                <a href="/rules" class="mdl-navigation__link" data-dynojax="root"><i class="material-icons">book</i>Rules</a>
+                <a href="/tags" class="mdl-navigation__link" data-dynojax="root"><i class="material-icons">local_offer</i>Tags</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
-            <div class="page-content">
+            <div id="dynojax-root">
                 <!-- Include module body -->
-                <%- include('modules/' + module + '/module', { globalData: globalData }); %>
-                <!-- Include footer -->
-                <%- include('includes/footer', { globalData: globalData }); %>
+                <%- include('modules/' + module + '/module', { globalData: globalData, httpStatus: httpStatus }); %>
             </div>
+            <!-- Include footer -->
+            <%- include('includes/footer', { globalData: globalData }); %>
         </main>
     </div>
 </body>

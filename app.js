@@ -3,12 +3,19 @@
 const express = require('express');
 const compression = require('compression');
 const helmet = require('helmet');
+
 const path = require('path');
 const cookieParser = require('cookie-parser');
+
 const initializeDatabases = require('./db');
+const system = require('./system/controller');
+const errorHandler = require('./system/errorHandler');
+
 const index = require('./routes/index');
+
 const config = require('./config/config.json');
 const lang = require('./config/language/' + config.general.defaultLanguage + '.json');
+
 const app = express();
 const port = config.general.port;
 
@@ -30,7 +37,7 @@ app.use(express.urlencoded({ extended: true }));
 // Support cookie parsing
 app.use(cookieParser());
 
-const startApp = async function () {
+const startApp = async () => {
     // Initialize databases
     const dbs = await initializeDatabases().catch((err) => {
         console.error('Failed to make all database connections!');
@@ -38,31 +45,19 @@ const startApp = async function () {
         process.exit(1);
     });
 
+    // Setup controller
+    const controller = await system(config, lang, dbs);
+
     // Initialize routes
-    app.use('/', index(config, lang, dbs));
+    app.use('/', index(controller));
 
     app.listen(port, () => {
         console.log('App running on port ' + port);
     });
 
-    // Catch 404 and forward to error handler
-    app.use((req, res, next) => {
-        let err = new Error(lang.errorPage.type_404.name);
-        err.status = 404;
-        next(err);
-    });
-
-    // Error handler
-    app.use((err, req, res) => {
-        res.status(err.status || 500);
-        let type = lang.errorPage['type_' + err.status];
-        res.render('error', {
-            status: (type) ? err.status : 500,
-            type: (type) ? type.name : lang.errorPage.internalError,
-            lang,
-            config
-        });
-    });
+    // Initialize error handler
+    app.use(errorHandler.catch404(lang));
+    app.use(errorHandler.initialize(controller));
 }
 
 startApp();

@@ -1,3 +1,20 @@
+.module-content {
+  display: flex;
+  padding: 80px 80px 40px 80px;
+  margin-top: -141px;
+}
+
+.module-content > .main-forum {
+  width: 100%;
+}
+
+.module-content > .main-forum > * {
+  margin-bottom: 40px;
+}
+.module-content > .main-forum > *:last-child {
+  margin-bottom: 0;
+}
+
 .forum-table .th-width--stretch {
   width: 100%;
 }
@@ -83,40 +100,11 @@ th {
   padding: 0 35px;
 }
 
-.category-menu > .content .btn {
-  padding: 14px 16px;
-  cursor: pointer;
-  min-width: fit-content;
-  white-space: nowrap;
-  text-align: center;
-  transition: 0.3s;
-  user-select: none;
-  color: #00064b;
-  background-color: #fff;
-}
-.category-menu > .content .btn:hover {
-  background-color: #f5f6f7;
-}
-.category-menu > .content .btn:active {
-  background-color: #ebeced;
-}
-
-.category-menu > .content .btn.primary {
-  color: #fff;
-  background-color: #39b54a;
-}
-.category-menu > .content .btn.primary:hover {
-  background-color: #32a041;
-}
-.category-menu > .content .btn.primary:active {
-  background-color: #288134;
-}
-
-.category-menu > .content .btn i:first-child {
+.category-menu > .content .button i:first-child {
   margin-right: 10px;
 }
 
-.category-menu > .content .btn i.fa-caret-down {
+.category-menu > .content .button i.fa-caret-down {
   margin-left: 10px;
 }
 
@@ -129,32 +117,34 @@ th {
   .category-menu > .content {
     padding: 0 25px;
   }
+
+  .module-content {
+    padding: 80px 40px 40px 40px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .module-content {
+    flex-direction: column;
+  }
+
+  .module-content > .forum-sidebar {
+    padding: 0;
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .module-content {
+    padding: 80px 0 40px 0;
+  }
 }
 @media only screen and (max-width: 600px) {
-  .category-menu > .content .btn span {
+  .category-menu > .content .button span {
     display: none;
   }
 
-  .category-menu > .content .btn i.fa-caret-down {
+  .category-menu > .content .button i.fa-caret-down {
     margin-left: 0;
   }
-}
-.module-content {
-  display: flex;
-  padding: 80px 80px 40px 80px;
-  margin-top: -141px;
-}
-
-.module-content > .main-forum {
-  width: 100%;
-}
-
-.module-content > .main-forum > * {
-  margin-bottom: 40px;
-}
-
-.module-content > .main-forum > *:last-child {
-  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

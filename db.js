@@ -6,12 +6,12 @@ const MongoClient = require('mongodb').MongoClient;
 // For strategies on handling credentials, visit 12factor: https://12factor.net/config.
 const DATABASE_URI = "mongodb://localhost:27017/exilocafe";
 
-async function connect(url) {
+let connect = async (url) => {
     const client = await MongoClient.connect(url, { useNewUrlParser: true });
     return client.db();
 }
 
-module.exports = async function () {
+module.exports = async () => {
     let databases = await Promise.all([connect(DATABASE_URI)]);
     return {
         login: databases[0]

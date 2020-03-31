@@ -1,0 +1,14 @@
+<%
+let msg = globalData.lang.errorPage;
+let type = msg['type_' + httpStatus];
+let typeName = (type) ? type.name : msg.internalError;
+let errorMessage = (type) ? type.message : msg.internalErrorMessage;
+%>
+<div class="module-content">
+    <div>
+        <h1><%= httpStatus %></h1>
+        <p class="title"><%= typeName %></p>
+        <p class="subtitle"><%= errorMessage %></p>
+        <a class="button primary with-shadow" href="/"><%= msg.homePageButton %></a>
+    </div>
+</div>

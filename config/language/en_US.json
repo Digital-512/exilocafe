@@ -18,12 +18,12 @@
     },
     "errorPage": {
         "errorTitle": "Error",
-        "checkReasons": "This may be due to the following reasons:",
-        "contactAdmin": "If you believe you are getting this error message by mistake, please contact the website administrator.",
         "internalError": "Internal System Error",
+        "internalErrorMessage": "The server encountered an internal error or misconfiguration and was unable to complete your request.",
+        "homePageButton": "Home Page",
         "type_404": {
-            "name": "Not Found",
-            "message": "The requested file or directory was not found!"
+            "name": "Oops, we can't find that page!",
+            "message": "Either something went wrong or the page doesn't exist anymore."
         },
         "type_500": {
             "name": "Internal Server Error",

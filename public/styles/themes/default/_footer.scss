@@ -25,7 +25,7 @@ footer > .col-1 > .button-row {
     display: flex;
     flex-direction: row;
 }
-footer > .col-1 > .button-row > .button {
+footer > .col-1 > .button-row > .btn {
     padding: 14px 50px;
     border-radius: 4px;
     border: 2px solid colors.$buttonSecondaryBorder;
@@ -42,7 +42,7 @@ footer > .col-1 > .button-row > .button {
         margin: 0;
     }
 }
-footer > .col-1 > .button-row > .button.primary {
+footer > .col-1 > .button-row > .btn.primary {
     background-color: colors.$buttonPrimary;
     border: 2px solid colors.$buttonPrimaryBorder;
     color: colors.$buttonPrimaryText;

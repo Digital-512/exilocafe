@@ -152,3 +152,33 @@
         }
     }
 }
+.with-shadow {
+    box-shadow: colors.$forumCardShadow;
+}
+.button {
+    padding: 14px 20px;
+    cursor: pointer;
+    min-width: fit-content;
+    white-space: nowrap;
+    text-align: center;
+    transition: 0.3s;
+    user-select: none;
+    color: colors.$buttonSecondaryText2;
+    background-color: colors.$buttonSecondary;
+    &:hover {
+        background-color: colors.$buttonSecondaryHover;
+    }
+    &:active {
+        background-color: colors.$buttonSecondaryActive;
+    }
+}
+.button.primary {
+    color: colors.$buttonPrimaryText;
+    background-color: colors.$buttonPrimary;
+    &:hover {
+        background-color: colors.$buttonPrimaryHover;
+    }
+    &:active {
+        background-color: colors.$buttonPrimaryActive;
+    }
+}

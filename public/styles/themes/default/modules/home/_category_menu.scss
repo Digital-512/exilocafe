@@ -4,36 +4,9 @@
     display: flex;
     padding: 0 35px;
 }
-.category-menu > .content .btn {
-    padding: 14px 16px;
-    cursor: pointer;
-    min-width: fit-content;
-    white-space: nowrap;
-    text-align: center;
-    transition: 0.3s;
-    user-select: none;
-    color: global_colors.$buttonSecondaryText2;
-    background-color: global_colors.$buttonSecondary;
-    &:hover {
-        background-color: global_colors.$buttonSecondaryHover;
-    }
-    &:active {
-        background-color: global_colors.$buttonSecondaryActive;
-    }
-}
-.category-menu > .content .btn.primary {
-    color: global_colors.$buttonPrimaryText;
-    background-color: global_colors.$buttonPrimary;
-    &:hover {
-        background-color: global_colors.$buttonPrimaryHover;
-    }
-    &:active {
-        background-color: global_colors.$buttonPrimaryActive;
-    }
-}
-.category-menu > .content .btn i:first-child {
+.category-menu > .content .button i:first-child {
     margin-right: 10px;
 }
-.category-menu > .content .btn i.fa-caret-down {
+.category-menu > .content .button i.fa-caret-down {
     margin-left: 10px;
 }

@@ -22,13 +22,13 @@
   "dependencies": {
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.5",
-    "ejs": "^3.0.1",
+    "ejs": "^3.0.2",
     "express": "^4.17.1",
-    "helmet": "^3.21.3",
+    "helmet": "^3.22.0",
     "mongodb": "^3.5.5"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
+    "autoprefixer": "^9.7.5",
     "postcss-cli": "^7.1.0",
     "sass": "^1.26.3",
     "terser": "^4.6.7"
